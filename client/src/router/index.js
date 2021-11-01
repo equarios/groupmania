@@ -7,6 +7,22 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    name: 'Posts',
+    component: () => import('../views/Posts.vue'),
+    meta: {
+      middleware: auth
+    }
+  },
+  {
+    path: '/posts/:postId',
+    name: 'OnePost',
+    component: () => import('../views/OnePost.vue'),
+    meta: {
+      middleware: auth
+    }
+  },
+  {
     path: '/login',
     name: 'Login',
     component: () => import('../views/Login.vue')

@@ -8,8 +8,11 @@ export default new Vuex.Store({
   state: {
     companyName: 'Groupomania'
   },
-  
-  
+  mutations: {},
+  actions: {},
+  modules: {
+    posts
+  }
 })
 
 
