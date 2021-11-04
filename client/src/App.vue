@@ -12,12 +12,20 @@
         />
       </router-link>
     </div>
+    <NotificationAlert />
     <router-view />
   </div>
 </template>
 
 <script>
+import NotificationAlert from '../src/components/NotificationAlert'
 
+export default {
+  name: 'App',
+  components: {
+    NotificationAlert
+  }
+}
 </script>
 
 <style lang="scss">
