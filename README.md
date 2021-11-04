@@ -24,10 +24,10 @@ created comment list with edit and delete buttons...
 created like and dislike button...
 
 used dependencies in client side:
-    1.bootstrap
-    2.bootstrap-vue
-    3.moment
-    4.vuex
+    1. bootstrap,
+    2. bootstrap-vue,
+    3. moment,
+    4. vuex,
 
 need to install npm first:
     change path to client folder: cd client
