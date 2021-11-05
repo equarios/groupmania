@@ -2,8 +2,7 @@
 
 <template>
 
-<div v-if="post === 0"> This will never be rendered. </div>
-  <div v-else>
+  <div>
     
     <b-row class="row justify-content-center align-items-center flex-column">
       <b-col cols="12" lg="6" v-for="post in posts.list" :key="post.id">
