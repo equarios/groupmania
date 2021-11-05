@@ -24,10 +24,10 @@ created comment list with edit and delete buttons...
 created like and dislike button...
 
 used dependencies in client side:
-    1.bootstrap
-    2.bootstrap-vue
-    3.moment
-    4.vuex
+    1. bootstrap,
+    2. bootstrap-vue,
+    3. moment,
+    4. vuex,
 
 need to install npm first:
     change path to client folder: cd client
@@ -39,6 +39,14 @@ for running client side command:
 
 
 server
+
+
+
+for creating database using sequelize command:
+    npx sequelize-cli db:create
+    
+for migrating database tables sequelize command:
+    npx sequelize-cli db:migrate
 
 used dependencies in server side:
    1. "bcrypt": "^5.0.1",
@@ -63,6 +71,11 @@ for running server side command:
 
 api path:
      http://localhost:3000/api
+     
+
+
+Learned from this project:
+    creating full stack solution creating fontend using vue and vuex and creating crud api using foreignkey with sequelize mysql
 
 
 
