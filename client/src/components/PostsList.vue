@@ -1,14 +1,26 @@
+
+
 <template>
-  <div>
+
+<div v-if="post === 0"> This will never be rendered. </div>
+  <div v-else>
+    
     <b-row class="row justify-content-center align-items-center flex-column">
       <b-col cols="12" lg="6" v-for="post in posts.list" :key="post.id">
         <Post :post="post" />
+       
+        
       </b-col>
     </b-row>
 
     <p class="mx-2">{{ posts.errorMessage }}</p>
+  
+    
   </div>
+  
+  
 </template>
+
 
 <script>
 import router from '../router/index'

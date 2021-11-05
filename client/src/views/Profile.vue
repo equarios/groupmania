@@ -4,6 +4,7 @@
 
     <b-row class="text-center justify-content-center">
       <b-col cols="12" lg="6">
+        
         <b-card
           class="mx-auto border-0 shadow p-lg-3 mb-2 mb-lg-5 mt-lg-3 bg-white rounded"
         >

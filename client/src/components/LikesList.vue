@@ -5,7 +5,7 @@
       @click="fetchLikesList"
       v-if="likesCount > 0"
       class="like-btn d-flex align-items-center my-2 mt-lg-0 mb-lg-3 ml-2 text-left"
-      aria-label="Show likes"
+      aria-label="Afficher les likes"
     >
       <div
         class="svg-container d-flex justify-content-center align-items-center"
@@ -19,8 +19,8 @@
       </div>
       <span class="likes-number ml-2">{{ likesCount }}</span>
     </button>
-    <b-modal :id="`modal-likes-${post.id}`" :title="`${likesCount} I like`">
-      <div v-bind="like in likesList">
+    <b-modal :id="`modal-likes-${post.id}`" :title="`${likesCount} Like`">
+      <div v-for="like in likesList">
         <router-link
           :to="{ name: 'UserProfile', params: { userId: like.User.id } }"
           ><div class="d-flex align-items-center">
